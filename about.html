@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Ayanna Henderson, MBA — Ayanna Henderson Marketing</title>
+<meta name="description" content="From high school production intern to running marketing for one of America's most recognized entertainers. Meet Ayanna Henderson — strategist, professor, podcast host, and founder.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--gold:#B8933F;--gold-light:#D4AF6A;--black:#0E0E0E;--off-black:#1A1A1A;--charcoal:#222;--mid:#6B6B6B;--light:#C8C8C8;--white:#FFF;--serif:'Cormorant Garamond',Georgia,serif;--sans:'DM Sans',system-ui,sans-serif}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--black);color:var(--white);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+/* NAV */
+nav#main-nav{position:sticky;top:0;z-index:100;background:rgba(14,14,14,.97);backdrop-filter:blur(16px);border-bottom:.5px solid rgba(184,147,63,.15)}
+.nav-top{display:flex;align-items:center;justify-content:space-between;padding:1.1rem 4vw}
+.nav-logo{font-family:var(--serif);font-size:1.1rem;font-weight:600;letter-spacing:.04em;color:var(--white);text-decoration:none}
+.nav-logo span{color:var(--gold)}
+.nav-logo-sub{font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--mid);font-family:var(--sans);font-weight:400;display:block;margin-top:2px}
+.nav-primary{display:flex;align-items:center;gap:1.5rem;list-style:none}
+.nav-primary>li>a{font-size:.75rem;font-weight:400;letter-spacing:.1em;text-transform:uppercase;color:var(--light);text-decoration:none;transition:color .2s;white-space:nowrap}
+.nav-primary>li>a:hover{color:var(--gold-light)}
+.nav-primary>li>a.here{color:var(--gold-light)}
+.nav-cta-btn{color:var(--black)!important;background:var(--gold);padding:.5rem 1.3rem;border-radius:2px;font-weight:500!important;transition:background .2s!important}
+.nav-cta-btn:hover{background:var(--gold-light)!important}
+.nav-mob{display:none;background:none;border:none;cursor:pointer;color:var(--white);font-size:1.4rem}
+/* MEGA DROPDOWN */
+.mega-wrap{position:relative}
+.mega-wrap:hover .mega-drop{display:flex}
+.mega-drop{display:none;position:absolute;top:calc(100% + .5rem);left:50%;transform:translateX(-50%);background:var(--off-black);border:.5px solid rgba(184,147,63,.2);z-index:300;min-width:700px}
+.mega-drop-inner{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:0}
+.mega-col{padding:1.75rem 1.5rem;border-right:.5px solid rgba(255,255,255,.07)}
+.mega-col:last-child{border-right:none}
+.mega-col-label{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;font-weight:500}
+.mega-link{display:flex;flex-direction:column;text-decoration:none;padding:.6rem 0;border-bottom:.5px solid rgba(255,255,255,.05)}
+.mega-link:last-child{border-bottom:none}
+.mega-link-title{font-size:.8rem;font-weight:500;color:var(--white);transition:color .2s;margin-bottom:.15rem}
+.mega-link-desc{font-size:.7rem;font-weight:300;color:rgba(255,255,255,.35);line-height:1.4}
+.mega-link:hover .mega-link-title{color:var(--gold-light)}
+.mega-feat{background:rgba(184,147,63,.06);padding:1.75rem;display:flex;flex-direction:column;justify-content:space-between}
+.mega-feat-label{font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);font-weight:500;margin-bottom:.75rem}
+.mega-feat-stat{font-family:var(--serif);font-size:2.5rem;font-weight:400;color:var(--gold-light);line-height:1;margin-bottom:.3rem}
+.mega-feat-text{font-size:.75rem;font-weight:300;color:rgba(255,255,255,.45);line-height:1.6;margin-bottom:1.25rem}
+.mega-feat-cta{font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);text-decoration:none;display:inline-flex;align-items:center;gap:.4rem}
+/* SECTION STRIP NAV */
+.snav{display:flex;align-items:center;overflow-x:auto;scrollbar-width:none;border-bottom:.5px solid rgba(255,255,255,.07);background:rgba(14,14,14,.92)}
+.snav::-webkit-scrollbar{display:none}
+.sn{flex-shrink:0;padding:.75rem 1.4rem;font-size:.67rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.3);text-decoration:none;border-right:.5px solid rgba(255,255,255,.06);transition:color .2s,background .2s;white-space:nowrap;cursor:pointer;background:none;border-top:none;border-left:none;border-bottom:none;font-family:var(--sans)}
+.sn:hover{color:var(--gold-light);background:rgba(184,147,63,.04)}
+.sn.active{color:var(--gold);background:rgba(184,147,63,.06);border-bottom:.5px solid var(--gold)}
+/* BUTTONS */
+.btn-p{display:inline-flex;align-items:center;gap:.5rem;font-size:.78rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--black);background:var(--gold);padding:.9rem 2.2rem;border-radius:2px;text-decoration:none;transition:background .2s,transform .15s}
+.btn-p:hover{background:var(--gold-light);transform:translateY(-1px)}
+.btn-g{display:inline-flex;align-items:center;gap:.4rem;font-size:.78rem;font-weight:400;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.5);border-bottom:1px solid rgba(255,255,255,.2);padding-bottom:2px;text-decoration:none;transition:color .2s,border-color .2s}
+.btn-g:hover{color:var(--gold-light);border-color:var(--gold-light)}
+/* GENERAL */
+section{padding:7rem 6vw}
+.ey{font-size:.68rem;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:1.2rem;display:flex;align-items:center;gap:.75rem}
+.ey::before{content:'';display:block;width:22px;height:1px;background:var(--gold)}
+h2.sh{font-family:var(--serif);font-size:clamp(2rem,3.5vw,3rem);font-weight:500;line-height:1.12;margin-bottom:1.5rem}
+h2.sh em{font-style:italic;color:var(--gold-light)}
+.bc{font-size:.95rem;font-weight:300;line-height:1.85;color:rgba(255,255,255,.65)}
+/* HERO */
+#about-hero{min-height:100vh;display:grid;grid-template-columns:1fr 1fr;position:relative;overflow:hidden;padding:0}
+.ah-left{display:flex;flex-direction:column;justify-content:flex-end;padding:10rem 4vw 6rem 6vw;position:relative;z-index:2;background:linear-gradient(to right,var(--black) 0%,rgba(14,14,14,.8) 100%)}
+.ah-h1{font-family:var(--serif);font-size:clamp(3rem,5.5vw,5.5rem);font-weight:500;line-height:1.05;margin-bottom:1.5rem}
+.ah-h1 em{font-style:italic;color:var(--gold-light);display:block}
+.ah-sub{font-size:.95rem;font-weight:300;line-height:1.85;color:rgba(255,255,255,.65);max-width:440px;margin-bottom:2.5rem}
+.ah-acts{display:flex;gap:1.25rem;flex-wrap:wrap;margin-bottom:3.5rem}
+.ah-creds{display:flex;flex-direction:column;gap:.55rem;padding-top:2.5rem;border-top:.5px solid rgba(255,255,255,.1)}
+.cred-pill{display:inline-flex;align-items:center;gap:.6rem;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.45)}
+.cred-pill::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--gold);flex-shrink:0}
+.ah-right{
+  position:relative;
+  overflow:hidden;
+  background:var(--black);
+}
+.ah-img{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:50% 10%;
+  display:block;
+}
+.ah-right::after{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(to right, var(--black) 0%, rgba(14,14,14,.7) 18%, rgba(14,14,14,.1) 42%, transparent 62%),
+    linear-gradient(to bottom, var(--black) 0%, transparent 10%, transparent 85%, var(--black) 100%),
+    linear-gradient(to left, rgba(14,14,14,.45) 0%, transparent 28%);
+  z-index:2;
+  pointer-events:none;
+}
+/* ORIGIN */
+#origin{background:var(--off-black);display:grid;grid-template-columns:1fr 2fr;gap:6rem;align-items:start}
+.origin-sidebar{position:sticky;top:8rem}
+.origin-sidebar h2{font-family:var(--serif);font-size:2.5rem;font-weight:500;line-height:1.15;margin-bottom:0}
+.origin-body{display:flex;flex-direction:column;gap:2.5rem}
+.origin-body p{font-size:1rem;font-weight:300;line-height:1.9;color:rgba(255,255,255,.7)}
+.origin-body p strong{color:var(--white);font-weight:500}
+.origin-pull{font-family:var(--serif);font-size:1.5rem;font-style:italic;color:rgba(255,255,255,.85);line-height:1.4;border-left:2px solid var(--gold);padding-left:2rem}
+/* DIGITAL DISTRUPTORS STAT BAND */
+#distruptors{background:var(--black);padding:0}
+.dist-inner{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:.5px solid rgba(255,255,255,.07);border-bottom:.5px solid rgba(255,255,255,.07)}
+.dist-cell{padding:3.5rem 3rem;border-right:.5px solid rgba(255,255,255,.07);text-align:center}
+.dist-cell:last-child{border-right:none}
+.dist-cell.accent{background:rgba(184,147,63,.06)}
+.dist-n{font-family:var(--serif);font-size:3.5rem;font-weight:400;color:var(--gold-light);line-height:1;margin-bottom:.5rem}
+.dist-t{font-size:.88rem;font-weight:500;color:var(--white);margin-bottom:.3rem}
+.dist-d{font-size:.75rem;font-weight:300;color:rgba(255,255,255,.35);line-height:1.5}
+/* CREDENTIALS */
+#credentials{background:var(--off-black)}
+.cred-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:.5px solid rgba(255,255,255,.1);margin-top:3rem}
+.cred-card{padding:2.5rem 2rem;border-right:.5px solid rgba(255,255,255,.1)}
+.cred-card:last-child{border-right:none}
+.cred-cat{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:1.5rem}
+.cred-card h3{font-family:var(--serif);font-size:1.3rem;font-weight:500;margin-bottom:1rem;line-height:1.2}
+.cred-card ul{list-style:none;display:flex;flex-direction:column;gap:.6rem}
+.cred-card li{font-size:.82rem;font-weight:300;line-height:1.6;color:rgba(255,255,255,.55);padding-left:1.2rem;position:relative}
+.cred-card li::before{content:'—';position:absolute;left:0;color:var(--gold);font-size:.7rem}
+/* PHILOSOPHY */
+#philosophy{background:var(--black);display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:center}
+.phil-img-wrap{position:relative;overflow:hidden}
+.phil-img{width:100%;display:block;object-fit:cover;object-position:50% 8%}
+.phil-img-wrap::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,var(--black) 0%,transparent 35%)}
+.phil-img-stat{position:absolute;bottom:2rem;left:2rem;right:2rem;z-index:2;display:flex;gap:1rem}
+.pis-box{background:rgba(14,14,14,.9);backdrop-filter:blur(8px);border:.5px solid rgba(184,147,63,.25);padding:1rem;flex:1;text-align:center}
+.pis-n{font-family:var(--serif);font-size:1.5rem;font-weight:400;color:var(--gold-light);line-height:1;margin-bottom:.2rem}
+.pis-l{font-size:.58rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.4)}
+.phil-principles{display:flex;flex-direction:column;gap:0}
+.phil-item{padding:2rem 0;border-bottom:.5px solid rgba(255,255,255,.08);display:flex;gap:2rem}
+.phil-item:first-child{padding-top:0}
+.phil-num{font-family:var(--serif);font-size:2rem;font-weight:400;color:rgba(184,147,63,.3);line-height:1;flex-shrink:0;width:2.5rem}
+.phil-title{font-size:.9rem;font-weight:500;margin-bottom:.4rem}
+.phil-body{font-size:.82rem;font-weight:300;line-height:1.7;color:rgba(255,255,255,.5)}
+/* FEATURED WORK */
+#featured-work{background:var(--off-black)}
+.work-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:.5px solid rgba(255,255,255,.1);margin-top:3rem}
+.work-item{padding:2rem 1.75rem;border-right:.5px solid rgba(255,255,255,.1);text-decoration:none;color:inherit;transition:background .2s;display:flex;flex-direction:column;gap:.5rem}
+.work-item:last-child{border-right:none}
+.work-item:hover{background:rgba(184,147,63,.06)}
+.work-tag{font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+.work-item h4{font-family:var(--serif);font-size:1.1rem;font-weight:500;line-height:1.3;flex:1}
+.work-item p{font-size:.78rem;font-weight:300;line-height:1.6;color:rgba(255,255,255,.45)}
+/* BEYOND */
+#beyond{background:var(--black);display:grid;grid-template-columns:1fr 1fr;gap:0;padding:0}
+.beyond-card{padding:6rem}
+.beyond-card:first-child{border-right:.5px solid rgba(255,255,255,.07)}
+.beyond-icon{width:48px;height:48px;border:.5px solid rgba(184,147,63,.3);border-radius:2px;display:flex;align-items:center;justify-content:center;margin-bottom:2rem}
+.beyond-icon svg{width:22px;height:22px;stroke:var(--gold);fill:none;stroke-width:1.2}
+.beyond-card h3{font-family:var(--serif);font-size:1.6rem;font-weight:500;margin-bottom:1rem}
+.beyond-card p{font-size:.88rem;font-weight:300;line-height:1.8;color:rgba(255,255,255,.55);margin-bottom:1.25rem}
+/* CTA */
+#about-cta{background:var(--charcoal);text-align:center;padding:8rem 6vw;position:relative;overflow:hidden}
+#about-cta::before{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:600px;height:600px;background:radial-gradient(circle,rgba(184,147,63,.1) 0%,transparent 65%);pointer-events:none}
+#about-cta h2{font-family:var(--serif);font-size:clamp(2.5rem,4.5vw,4rem);font-weight:500;line-height:1.1;margin-bottom:1.5rem}
+#about-cta h2 em{font-style:italic;color:var(--gold-light)}
+#about-cta p{font-size:.95rem;font-weight:300;line-height:1.8;color:rgba(255,255,255,.5);max-width:500px;margin:0 auto 2.5rem}
+/* FOOTER */
+footer{background:var(--off-black);padding:4rem 6vw 2rem;border-top:.5px solid rgba(255,255,255,.07)}
+.ft-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:4rem;margin-bottom:4rem}
+.ft-brand p{font-size:.82rem;font-weight:300;line-height:1.8;color:rgba(255,255,255,.4);margin-top:.75rem;max-width:280px}
+.ft-sub{font-size:.65rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-top:.5rem}
+.ft-col h5{font-size:.63rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:1.25rem;font-weight:500}
+.ft-col ul{list-style:none;display:flex;flex-direction:column;gap:.6rem}
+.ft-col a{font-size:.82rem;font-weight:300;color:rgba(255,255,255,.45);text-decoration:none;transition:color .2s}
+.ft-col a:hover{color:var(--gold-light)}
+.ft-bot{border-top:.5px solid rgba(255,255,255,.07);padding-top:1.5rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+.ft-bot p{font-size:.72rem;color:var(--mid)}
+.ft-soc{display:flex;gap:1.5rem}
+.ft-soc a{font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--mid);text-decoration:none;transition:color .2s}
+.ft-soc a:hover{color:var(--gold-light)}
+/* ANIM */
+.fu{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
+.fu.v{opacity:1;transform:none}
+.fu:nth-child(2){transition-delay:.1s}.fu:nth-child(3){transition-delay:.2s}.fu:nth-child(4){transition-delay:.3s}
+/* MOBILE */
+@media(max-width:960px){
+  .nav-primary{display:none}
+  .nav-primary.open{display:flex;flex-direction:column;gap:1.5rem;position:fixed;top:0;left:0;right:0;bottom:0;background:var(--black);z-index:200;padding:5rem 2rem 2rem;overflow-y:auto}
+  .nav-primary.open>li>a{font-size:1.2rem}
+  .mega-drop{position:static;transform:none;min-width:auto;display:none!important}
+  .nav-primary.open .mega-wrap .mega-drop{display:block!important;border:none;background:transparent;padding-left:1rem;margin-top:.5rem}
+  .nav-primary.open .mega-drop-inner{grid-template-columns:1fr}
+  .nav-primary.open .mega-col{border-right:none;border-bottom:.5px solid rgba(255,255,255,.07);padding:1rem 0}
+  .nav-primary.open .mega-feat{display:none}
+  .nav-mob{display:block;z-index:300;position:relative}
+  #about-hero{grid-template-columns:1fr}
+  .ah-right{height:480px}
+  .ah-left{padding:7rem 5vw 4rem}
+  #origin{grid-template-columns:1fr;gap:2rem}
+  .origin-sidebar{position:static}
+  .dist-inner{grid-template-columns:1fr 1fr}
+  .cred-grid{grid-template-columns:1fr 1fr}
+  .cred-card:nth-child(2){border-right:none}
+  #philosophy{grid-template-columns:1fr;gap:2.5rem}
+  .work-strip{grid-template-columns:1fr 1fr}
+  .work-item:nth-child(2),.work-item:nth-child(4){border-right:none}
+  #beyond{grid-template-columns:1fr}
+  .beyond-card:first-child{border-right:none;border-bottom:.5px solid rgba(255,255,255,.07)}
+  .beyond-card{padding:4rem 5vw}
+  section{padding:5rem 5vw}
+  .ft-top{grid-template-columns:1fr 1fr;gap:2rem}
+}
+</style>
+</head>
+<body>
+
+<!-- MEGA NAV — matches homepage exactly -->
+<nav id="main-nav">
+  <div class="nav-top">
+    <a href="index.html" class="nav-logo">Ayanna Henderson <span>Marketing</span><span class="nav-logo-sub">Strategy · Story · Scale · Intelligence</span></a>
+    <ul class="nav-primary" id="nav-links">
+      <li><a href="case-studies.html">Work</a></li>
+      <li class="mega-wrap"><a href="services.html">Services ▾</a>
+        <div class="mega-drop"><div class="mega-drop-inner">
+          <div class="mega-col">
+            <p class="mega-col-label">Who We Serve</p>
+            <a href="https://ayannahendersonmarketing.com/pages/how-we-work-with-small-businesses" class="mega-link"><span class="mega-link-title">Small Businesses</span><span class="mega-link-desc">Social, content, ads & brand strategy</span></a>
+            <a href="https://ayannahendersonmarketing.com/pages/how-we-work-with-brands-and-celebrities" class="mega-link"><span class="mega-link-title">Brands & Celebrities</span><span class="mega-link-desc">High-level strategy & campaign management</span></a>
+            <a href="https://ayannahendersonmarketing.com/pages/how-we-work-with-creators-and-influencers" class="mega-link"><span class="mega-link-title">Creators & Influencers</span><span class="mega-link-desc">Monetization, identity & growth systems</span></a>
+            <a href="https://ayannahendersonmarketing.com/pages/how-we-work-with-founders-foundations-and-nonprofits" class="mega-link"><span class="mega-link-title">Nonprofits & Foundations</span><span class="mega-link-desc">Mission storytelling & donor engagement</span></a>
+            <a href="https://ayannahendersonmarketing.com/pages/how-we-work-with-networks-production-companies-and-tv-and-film-studios" class="mega-link"><span class="mega-link-title">Networks & Studios</span><span class="mega-link-desc">TV, film & digital media campaigns</span></a>
+          </div>
+          <div class="mega-col">
+            <p class="mega-col-label">What We Do</p>
+            <a href="services.html" class="mega-link"><span class="mega-link-title">Social Media Management</span><span class="mega-link-desc">Strategy, creation & community</span></a>
+            <a href="video-production.html" class="mega-link"><span class="mega-link-title">Video Production & BTS</span><span class="mega-link-desc">On-set, event & live social capture</span></a>
+            <a href="services.html" class="mega-link"><span class="mega-link-title">Brand Strategy & Positioning</span><span class="mega-link-desc">Identity, messaging & competitive edge</span></a>
+            <a href="fractional-cmo.html" class="mega-link"><span class="mega-link-title">AI-Integrated Content</span><span class="mega-link-desc">Scalable production with human direction</span></a>
+            <a href="pricing.html" class="mega-link"><span class="mega-link-title">View Pricing</span><span class="mega-link-desc">Transparent packages from $997/mo</span></a>
+          </div>
+          <div class="mega-feat">
+            <div><p class="mega-feat-label">Digital Distruptors</p><p class="mega-feat-stat">30B+</p><p class="mega-feat-text">Total impressions. 10% avg. engagement rate across all campaigns.</p></div>
+            <a href="case-studies.html" class="mega-feat-cta">See All Case Studies →</a>
+          </div>
+        </div></div>
+      </li>
+      <li class="mega-wrap"><a href="fractional-cmo.html">Leadership ▾</a>
+        <div class="mega-drop"><div class="mega-drop-inner">
+          <div class="mega-col">
+            <p class="mega-col-label">Executive Services</p>
+            <a href="fractional-cmo.html#cmo" class="mega-link"><span class="mega-link-title">Fractional CMO</span><span class="mega-link-desc">Embedded Chief Marketing Officer</span></a>
+            <a href="fractional-cmo.html#ceo" class="mega-link"><span class="mega-link-title">Fractional CEO</span><span class="mega-link-desc">Full operational & strategic leadership</span></a>
+            <a href="fractional-cmo.html#combined" class="mega-link"><span class="mega-link-title">Combined CEO + CMO</span><span class="mega-link-desc">Dual executive function</span></a>
+          </div>
+          <div class="mega-col">
+            <p class="mega-col-label">Engagement Models</p>
+            <a href="fractional-cmo.html" class="mega-link"><span class="mega-link-title">Strategy Sprint</span><span class="mega-link-desc">4–6 weeks · From $997</span></a>
+            <a href="fractional-cmo.html" class="mega-link"><span class="mega-link-title">Monthly Retainer</span><span class="mega-link-desc">Ongoing embedded leadership</span></a>
+            <a href="contact.html" class="mega-link"><span class="mega-link-title">Book Discovery Call</span><span class="mega-link-desc">Free 30-minute consultation</span></a>
+          </div>
+          <div class="mega-feat">
+            <div><p class="mega-feat-label">The Framework</p><p class="mega-feat-stat" style="font-size:1.5rem;line-height:1.3">"Operate like a $10M company."</p><p class="mega-feat-text">Executive leadership at a fraction of full-time cost.</p></div>
+            <a href="fractional-cmo.html" class="mega-feat-cta">Explore Leadership →</a>
+          </div>
+        </div></div>
+      </li>
+      <li class="mega-wrap"><a href="about.html" class="here">Company ▾</a>
+        <div class="mega-drop"><div class="mega-drop-inner">
+          <div class="mega-col">
+            <p class="mega-col-label">About</p>
+            <a href="about.html" class="mega-link"><span class="mega-link-title">About Ayanna Henderson</span><span class="mega-link-desc">Founder, MBA, strategist & professor</span></a>
+            <a href="case-studies.html" class="mega-link"><span class="mega-link-title">Case Studies</span><span class="mega-link-desc">Steve Harvey, E!, Keys Soulcare & more</span></a>
+            <a href="https://ayannahendersonmarketing.com/blogs/portfolio-ayanna-henderson-marketing" class="mega-link"><span class="mega-link-title">Portfolio</span><span class="mega-link-desc">Campaigns, BTS & content work</span></a>
+            <a href="https://ayannahendersonmarketing.com/blogs/news" class="mega-link"><span class="mega-link-title">News & Press</span><span class="mega-link-desc">Latest announcements & coverage</span></a>
+          </div>
+          <div class="mega-col">
+            <p class="mega-col-label">Resources</p>
+            <a href="https://open.spotify.com" target="_blank" rel="noopener" class="mega-link"><span class="mega-link-title">Podcast: Operate Like a $10M Company</span><span class="mega-link-desc">Strategy for founders & executives</span></a>
+            <a href="https://ayannahendersonmarketing.com/blogs/digital-marketing-branding-tips" class="mega-link"><span class="mega-link-title">Marketing Tips Blog</span><span class="mega-link-desc">Practical insights from 15+ years</span></a>
+            <a href="https://ayannahendersonmarketing.com/blogs/events" class="mega-link"><span class="mega-link-title">Events</span><span class="mega-link-desc">Workshops, speaking & upcoming events</span></a>
+            <a href="pricing.html" class="mega-link"><span class="mega-link-title">Pricing</span><span class="mega-link-desc">Transparent packages & custom quotes</span></a>
+          </div>
+          <div class="mega-feat">
+            <div><p class="mega-feat-label">Ayanna Henderson, MBA</p><p class="mega-feat-text">15+ years. Entertainment. Beauty. Sports. Nonprofits. Professor. Podcast host. AI-forward strategist.</p></div>
+            <a href="about.html" class="mega-feat-cta">You're here →</a>
+          </div>
+        </div></div>
+      </li>
+      <li><a href="contact.html" class="nav-cta-btn">Book a Call</a></li>
+    </ul>
+    <button class="nav-mob" id="mob-btn">☰</button>
+  </div>
+  <!-- PAGE SECTION STRIP NAV -->
+  <div class="snav" id="snav">
+    <button class="sn active" data-target="about-hero">Overview</button>
+    <button class="sn" data-target="origin">Origin Story</button>
+    <button class="sn" data-target="distruptors">Impact Numbers</button>
+    <button class="sn" data-target="credentials">Credentials</button>
+    <button class="sn" data-target="philosophy">Philosophy</button>
+    <button class="sn" data-target="featured-work">Featured Work</button>
+    <button class="sn" data-target="beyond">Teaching & Podcast</button>
+    <button class="sn" data-target="about-cta">Work Together</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="about-hero" style="padding:0">
+  <div class="ah-left">
+    <p class="ey">Ayanna Henderson, MBA</p>
+    <h1 class="ah-h1">Built from<br>the ground up.<em>Built to last.</em></h1>
+    <p class="ah-sub">Founder. Strategist. Professor. Podcast host. 15+ years building brands, leading campaigns, and teaching the next generation of marketers from Los Angeles.</p>
+    <div class="ah-acts">
+      <button class="btn-p" onclick="scrollToSection('about-cta')">Work With Ayanna</button>
+      <a href="fractional-cmo.html" class="btn-g">Fractional CEO + CMO Services</a>
+    </div>
+    <div class="ah-creds">
+      <span class="cred-pill">MBA — Business & Marketing Strategy</span>
+      <span class="cred-pill">Former Lead Agency — Steve Harvey Global</span>
+      <span class="cred-pill">E! / NBCUniversal — People's Choice Awards</span>
+      <span class="cred-pill">Keys Soulcare · MileIQ · UCLA Black Alumni</span>
+      <span class="cred-pill">10+ Years Adjunct Professor, Santa Monica College</span>
+      <span class="cred-pill">Digital Distruptors — 30B+ Impressions · 10% Engagement Rate</span>
+    </div>
+  </div>
+  <div class="ah-right">
+    <img src="ayanna-hero.jpg" alt="Ayanna Henderson, MBA — Founder & CEO" class="ah-img" loading="eager">
+  </div>
+</section>
+
+<!-- ORIGIN STORY -->
+<section id="origin">
+  <div class="origin-sidebar fu">
+    <p class="ey">Origin Story</p>
+    <h2 class="sh" style="margin-bottom:0">From intern<br>to industry.</h2>
+  </div>
+  <div class="origin-body">
+    <p class="fu">Ayanna Henderson didn't start with a corner office or a Fortune 500 client list. She started as a <strong>high school production intern in Los Angeles</strong> — sitting in rooms where decisions were being made, watching how content, strategy, and brand identity worked together to build something people actually cared about.</p>
+    <p class="origin-pull fu">"I was in rooms that most people spend their entire career trying to get into. I paid attention."</p>
+    <p class="fu">Over the next decade and a half, Ayanna built one of the most distinctive marketing careers in Los Angeles. She scaled Steve Harvey's social media presence from <strong>15 million to over 70 million followers</strong> — managing digital strategy across his full brand portfolio while productions filmed, awards shows aired, and the audience kept growing. She ran social media for <strong>E! Network's People's Choice Awards</strong> under NBCUniversal. She developed campaigns for <strong>Keys Soulcare</strong>, Alicia Keys' beauty brand, and for <strong>MileIQ</strong>, a Microsoft productivity product.</p>
+    <p class="fu">In parallel, she built something else: a classroom. For over a decade, Ayanna has taught <strong>digital marketing, social media strategy, and business fundamentals</strong> at the college level — translating real-world experience into frameworks students could actually use.</p>
+    <p class="fu">Ayanna Henderson Marketing is the agency she built to bring that same level of strategy to every client — whether they're a celebrity brand, a local nonprofit, a national corporation, or a founder ready to grow past where they are.</p>
+  </div>
+</section>
+
+<!-- DIGITAL DISTRUPTORS NUMBERS -->
+<div id="distruptors">
+  <div class="dist-inner">
+    <div class="dist-cell fu">
+      <p class="dist-n">30B+</p>
+      <p class="dist-t">Total Impressions</p>
+      <p class="dist-d">Cumulative across campaigns, clients, and brand properties</p>
+    </div>
+    <div class="dist-cell fu">
+      <p class="dist-n">16B+</p>
+      <p class="dist-t">Link Clicks</p>
+      <p class="dist-d">Billions of audience-initiated actions driven by content strategy</p>
+    </div>
+    <div class="dist-cell fu">
+      <p class="dist-n">3B+</p>
+      <p class="dist-t">Total Engagements</p>
+      <p class="dist-d">Likes, comments, shares, saves across every platform</p>
+    </div>
+    <div class="dist-cell accent fu">
+      <p class="dist-n">10%</p>
+      <p class="dist-t">Avg. Engagement Rate</p>
+      <p class="dist-d">Industry average is under 2% — we outperform consistently</p>
+    </div>
+  </div>
+</div>
+
+<!-- CREDENTIALS -->
+<section id="credentials">
+  <p class="ey fu">Career Highlights</p>
+  <h2 class="sh fu">A track record that<br><em>speaks for itself.</em></h2>
+  <div class="cred-grid">
+    <div class="cred-card fu">
+      <p class="cred-cat">Entertainment</p>
+      <h3>Television & Celebrity</h3>
+      <ul>
+        <li>Steve Harvey Global — Social Strategy (15M → 70M+)</li>
+        <li>Judge Steve Harvey, ABC — Digital Campaign Management</li>
+        <li>Steve Harvey Morning Show — Cross-Platform Amplification</li>
+        <li>E! Network / NBCUniversal — People's Choice Awards</li>
+        <li>Facebook Watch — Stephen vs. The Game (Stephen Curry)</li>
+        <li>Caffeine TV — Platform Growth Strategy</li>
+      </ul>
+    </div>
+    <div class="cred-card fu">
+      <p class="cred-cat">Brand & Consumer</p>
+      <h3>Brand & Product Campaigns</h3>
+      <ul>
+        <li>Keys Soulcare (Alicia Keys) — Beauty Brand Strategy</li>
+        <li>e.l.f. Beauty — Women's History Month Campaign</li>
+        <li>MileIQ (Microsoft) — AI-Optimized Social Growth</li>
+        <li>UCLA Black Alumni Association — Event Production</li>
+        <li>Association of Black Cardiologists — Production</li>
+        <li>Santa Monica College — Workshop & Education</li>
+      </ul>
+    </div>
+    <div class="cred-card fu">
+      <p class="cred-cat">Education & Leadership</p>
+      <h3>Academic & Professional</h3>
+      <ul>
+        <li>MBA — Business & Marketing Strategy</li>
+        <li>Adjunct Professor — Digital Marketing, Social Media, Business (10+ years)</li>
+        <li>Co-President — BPRS Los Angeles Chapter</li>
+        <li>Corporate Relations Co-Chair — National Black MBA Association, LA</li>
+        <li>Workshop Creator — "Local Marketing: From Sidewalk to Social"</li>
+        <li>Podcast Host — "Operate Like a $10M Company" (Spotify)</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- PHILOSOPHY -->
+<section id="philosophy">
+  <div class="phil-img-wrap fu">
+    <img src="ayanna-hero.jpg" alt="Ayanna Henderson — marketing philosophy" class="phil-img" loading="lazy">
+    <div class="phil-img-stat">
+      <div class="pis-box"><p class="pis-n">15+</p><p class="pis-l">Years of experience</p></div>
+      <div class="pis-box"><p class="pis-n">MBA</p><p class="pis-l">Business & strategy</p></div>
+      <div class="pis-box"><p class="pis-n">10+</p><p class="pis-l">Years teaching</p></div>
+    </div>
+  </div>
+  <div>
+    <p class="ey fu">How We Think</p>
+    <h2 class="sh fu">Four beliefs that<br><em>drive everything.</em></h2>
+    <div class="phil-principles">
+      <div class="phil-item fu"><p class="phil-num">01</p><div><p class="phil-title">Strategy before aesthetics.</p><p class="phil-body">Design without strategy is decoration. We build marketing frameworks grounded in insight, research, and measurable objectives — then we make them look good.</p></div></div>
+      <div class="phil-item fu"><p class="phil-num">02</p><div><p class="phil-title">Visibility ≠ scalability.</p><p class="phil-body">Going viral is not a strategy. More followers is not a business outcome. We build marketing that converts, retains, and compounds — not marketing that performs for the algorithm and disappears.</p></div></div>
+      <div class="phil-item fu"><p class="phil-num">03</p><div><p class="phil-title">AI amplifies, humans direct.</p><p class="phil-body">We use AI to produce faster, test more, and scale creative — but strategy requires human judgment, cultural fluency, and industry experience that no model can replicate. We use both, intentionally.</p></div></div>
+      <div class="phil-item fu"><p class="phil-num">04</p><div><p class="phil-title">Small businesses deserve enterprise strategy.</p><p class="phil-body">A local restaurant or nonprofit shouldn't settle for generic advice. If you have a real business with real goals, you deserve real strategy — and this agency was built to deliver it regardless of company size.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED WORK -->
+<section id="featured-work">
+  <p class="ey fu">Selected Work</p>
+  <h2 class="sh fu">A few names you<br><em>might know.</em></h2>
+  <div class="work-strip">
+    <a href="https://ayannahendersonmarketing.com/blogs/case-studies/case-study-how-ayanna-henderson-marketing-amplified-judge-steve-harvey-across-television-amp-digital-media" class="work-item fu"><p class="work-tag">Television · Celebrity</p><h4>Judge Steve Harvey</h4><p>Digital amplification across ABC primetime, brand social channels, and fan engagement. 15M → 70M+.</p></a>
+    <a href="https://ayannahendersonmarketing.com/blogs/portfolio-ayanna-henderson-marketing/portfolio-ayanna-henderson-marketing" class="work-item fu"><p class="work-tag">Beauty · Campaign</p><h4>Keys Soulcare</h4><p>Audience expansion strategy for Alicia Keys' beauty and wellness brand partnership with e.l.f.</p></a>
+    <a href="https://ayannahendersonmarketing.com/blogs/case-studies/case-study-mileiq-driving-consistent-growth-through-strategic-social-media-ai-optimized-content" class="work-item fu"><p class="work-tag">SaaS · Growth</p><h4>MileIQ</h4><p>AI-optimized content strategy driving consistent engagement growth for a Microsoft productivity brand.</p></a>
+    <a href="https://ayannahendersonmarketing.com/blogs/news/ayanna-henderson-marketing-invited-back-to-lead-full-event-production-for-ucla-black-alumni-association-s-2026-winston-c-doby-legacy-scholarship-dinner" class="work-item fu"><p class="work-tag">Event · Production</p><h4>UCLA Black Alumni Association</h4><p>Full-service event production for the Winston C. Doby Legacy Scholarship Dinner — two years running.</p></a>
+  </div>
+  <div style="margin-top:2.5rem;text-align:right" class="fu">
+    <a href="case-studies.html" class="btn-g">View All Case Studies →</a>
+  </div>
+</section>
+
+<!-- BEYOND THE AGENCY -->
+<div id="beyond" style="padding:0">
+  <div class="beyond-card fu">
+    <div class="beyond-icon"><svg viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg></div>
+    <h3>10 Years in the Classroom</h3>
+    <p>For over a decade, Ayanna has taught digital marketing, social media strategy, and business fundamentals at the college level. That commitment to education shows up in how she works with clients — clear frameworks, real explanations, and a deep belief that understanding the why makes everything else better.</p>
+    <p>In 2026, she partnered with Santa Monica College and the Santa Monica Chamber of Commerce to launch <em>"Local Marketing: From Sidewalk to Social"</em> — a practical workshop for local business owners across the LA region.</p>
+    <div style="margin-top:1.5rem"><a href="https://ayannahendersonmarketing.com/blogs/news/ayanna-henderson-celebrates-10-years-as-a-professor-of-business-digital-marketing-social-media" class="btn-g">Read About 10 Years of Teaching →</a></div>
+  </div>
+  <div class="beyond-card fu">
+    <div class="beyond-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg></div>
+    <h3>Operate Like a $10M Company</h3>
+    <p>Ayanna's Spotify podcast is for founders, creators, and executives who are done with content advice and ready to build real business infrastructure. Episodes cover marketing strategy, revenue systems, brand building, and the operational discipline that separates growing companies from spinning ones.</p>
+    <p>Recent episodes: <em>"Fractional CEO vs. CMO: Do You Need Both?"</em> and <em>"You Don't Need More Content. You Need Leadership."</em></p>
+    <div style="margin-top:1.5rem"><a href="https://open.spotify.com" target="_blank" rel="noopener" class="btn-g">Listen on Spotify →</a></div>
+  </div>
+</div>
+
+<!-- CTA -->
+<section id="about-cta">
+  <p class="ey fu" style="justify-content:center">Work Together</p>
+  <h2 class="sh fu" style="max-width:700px;margin:0 auto 1.5rem">Let's build something<br><em>worth talking about.</em></h2>
+  <p class="fu" style="font-size:.95rem;font-weight:300;line-height:1.8;color:rgba(255,255,255,.5);max-width:500px;margin:0 auto 2.5rem">Whether you need a full agency relationship, fractional executive leadership, or a strategy consultation — Ayanna's ready to talk.</p>
+  <div style="display:flex;gap:1.25rem;justify-content:center;flex-wrap:wrap" class="fu">
+    <a href="https://ayannahendersonmarketing.com/pages/contact" class="btn-p">Book a Strategy Call</a>
+    <a href="fractional-cmo.html" class="btn-g" style="color:rgba(255,255,255,.5)">Explore Fractional CEO + CMO</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="ft-top">
+    <div class="ft-brand">
+      <a href="index.html" style="font-family:var(--serif);font-size:1.1rem;font-weight:600;letter-spacing:.04em;color:var(--white);text-decoration:none">Ayanna Henderson <span style="color:var(--gold)">Marketing</span></a>
+      <p class="ft-sub">We build the machine. You run the brand.</p>
+      <p>Strategy. Story. Scale. Intelligence. Full-service marketing agency, Fractional CEO + CMO practice, and AI-integrated production house. Los Angeles.</p>
+    </div>
+    <div class="ft-col"><h5>Services</h5><ul><li><a href="services.html">All Services</a></li><li><a href="video-production.html">Video Production</a></li><li><a href="fractional-cmo.html">Fractional CEO + CMO</a></li><li><a href="pricing.html">Pricing</a></li></ul></div>
+    <div class="ft-col"><h5>Company</h5><ul><li><a href="about.html">About Ayanna</a></li><li><a href="case-studies.html">Case Studies</a></li><li><a href="https://ayannahendersonmarketing.com/blogs/news">News</a></li><li><a href="https://open.spotify.com" target="_blank" rel="noopener">Podcast</a></li></ul></div>
+    <div class="ft-col"><h5>Connect</h5><ul><li><a href="contact.html">Book a Call</a></li><li><a href="https://instagram.com/ayannahendersonmarketing" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://www.tiktok.com/@ayannahendersonmarketing" target="_blank" rel="noopener">TikTok</a></li><li><a href="https://twitter.com/AyannaHenderson" target="_blank" rel="noopener">X (Twitter)</a></li><li><a href="https://www.youtube.com/@ayannahendersonmarketing" target="_blank" rel="noopener">YouTube</a></li></ul></div>
+  </div>
+  <div class="ft-bot"><p>© 2026 Ayanna Henderson Marketing. All rights reserved. Los Angeles, CA.</p><div class="ft-soc"><a href="https://instagram.com/ayannahendersonmarketing" target="_blank" rel="noopener">Instagram</a><a href="https://twitter.com/AyannaHenderson" target="_blank" rel="noopener">X</a><a href="https://www.tiktok.com/@ayannahendersonmarketing" target="_blank" rel="noopener">TikTok</a><a href="https://www.youtube.com/@ayannahendersonmarketing" target="_blank" rel="noopener">YouTube</a></div></div>
+</footer>
+
+<script>
+const navH = () => document.getElementById('main-nav').offsetHeight;
+function scrollToSection(id) {
+  const el = document.getElementById(id);
+  if (el) window.scrollTo({ top: el.offsetTop - navH(), behavior: 'smooth' });
+}
+// Section nav buttons
+document.querySelectorAll('.sn[data-target]').forEach(btn => {
+  btn.addEventListener('click', () => scrollToSection(btn.dataset.target));
+});
+// Mobile nav
+const mob = document.getElementById('mob-btn'), nl = document.getElementById('nav-links');
+let open = false;
+mob.addEventListener('click', () => { open=!open; nl.classList.toggle('open',open); mob.textContent=open?'✕':'☰'; document.body.style.overflow=open?'hidden':''; });
+nl.querySelectorAll('a,button').forEach(a => a.addEventListener('click', () => { open=false; nl.classList.remove('open'); mob.textContent='☰'; document.body.style.overflow=''; }));
+// Scroll animations
+const fuObs = new IntersectionObserver(e => e.forEach(e => { if(e.isIntersecting) e.target.classList.add('v'); }), { threshold: 0.08 });
+document.querySelectorAll('.fu').forEach(el => fuObs.observe(el));
+// Section nav active state
+const ids = ['about-hero','origin','distruptors','credentials','philosophy','featured-work','beyond','about-cta'];
+const btns = document.querySelectorAll('.sn[data-target]');
+const sObs = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      btns.forEach(b => b.classList.remove('active'));
+      const active = document.querySelector(`.sn[data-target="${entry.target.id}"]`);
+      if (active) { active.classList.add('active'); active.scrollIntoView({ behavior:'smooth', block:'nearest', inline:'center' }); }
+    }
+  });
+}, { threshold: 0.3, rootMargin: `-${navH()}px 0px 0px 0px` });
+ids.forEach(id => { const el = document.getElementById(id); if(el) sObs.observe(el); });
+</script>
+</body>
+</html>
