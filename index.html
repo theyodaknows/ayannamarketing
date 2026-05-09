@@ -5,6 +5,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ayanna Henderson Marketing — Strategy Built. Content Driven. Brand Transformed.</title>
 <meta name="description" content="We build the strategy, create the content, run the campaigns, and produce the brand. Full-service marketing agency + Fractional CEO/CMO + video production. Los Angeles. 30B+ impressions.">
+<!-- Open Graph / Social Preview -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ayannahendersonmarketing.com/">
+<meta property="og:title" content="Ayanna Henderson Marketing — Strategy Built. Content Driven. Brand Transformed.">
+<meta property="og:description" content="Full-service marketing agency, Fractional CEO + CMO, and AI-integrated video production. 30B+ impressions. 15+ years. Los Angeles.">
+<meta property="og:image" content="https://ayannahendersonmarketing.com/cdn/shop/files/481252281_650467397377825_2228218541559673857_n.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="Ayanna Henderson Marketing">
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@AyannaHenderson">
+<meta name="twitter:title" content="Ayanna Henderson Marketing — Strategy Built. Content Driven. Brand Transformed.">
+<meta name="twitter:description" content="Full-service marketing agency, Fractional CEO + CMO, and AI-integrated video production. 30B+ impressions. 15+ years. Los Angeles.">
+<meta name="twitter:image" content="https://ayannahendersonmarketing.com/cdn/shop/files/481252281_650467397377825_2228218541559673857_n.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
@@ -329,7 +344,7 @@ footer{background:var(--off-black);padding:4rem 6vw 2rem;border-top:.5px solid r
 .fu{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
 .fu.v{opacity:1;transform:none}
 .fu:nth-child(2){transition-delay:.1s}.fu:nth-child(3){transition-delay:.2s}.fu:nth-child(4){transition-delay:.3s}
-/* MOBILE */
+/* ── TABLET (960px) ─────────────────────────────────── */
 @media(max-width:960px){
   .nav-primary{display:none}
   .nav-primary.open{display:flex;flex-direction:column;gap:1.5rem;position:fixed;top:0;left:0;right:0;bottom:0;background:var(--black);z-index:200;padding:5rem 2rem 2rem;overflow-y:auto}
@@ -351,9 +366,10 @@ footer{background:var(--off-black);padding:4rem 6vw 2rem;border-top:.5px solid r
   .vb-l{border-right:none;border-bottom:.5px solid rgba(184,147,63,.15);padding:3rem 5vw}
   .vb-r{grid-template-columns:1fr 1fr;padding:3px}
   .vb-img{height:140px}
-  .eco-cards{grid-template-columns:1fr}
+  .eco-cards{grid-template-columns:1fr 1fr}
   .eco-header{grid-template-columns:1fr;gap:1.5rem}
-  .svc-grid,.cases-grid,.testi-grid,.news-grid{grid-template-columns:1fr}
+  .svc-grid,.testi-grid,.news-grid{grid-template-columns:1fr 1fr}
+  .cases-grid{grid-template-columns:1fr}
   .svc-card{border-right:none;border-bottom:.5px solid rgba(255,255,255,.08)}
   .cc{border-right:none;border-bottom:.5px solid rgba(255,255,255,.08)}
   .cc.ft{min-height:280px}
@@ -363,9 +379,44 @@ footer{background:var(--off-black);padding:4rem 6vw 2rem;border-top:.5px solid r
   #fractional-leadership{padding:5rem 5vw}
   .testi-intro{grid-template-columns:1fr;gap:2rem}
   .svc-intro{grid-template-columns:1fr;gap:1.5rem}
+  .diff-cells{grid-template-columns:1fr 1fr}
+  .lead-tabs{flex-wrap:wrap;gap:.5rem}
+  .lead-tab{flex:1;min-width:140px;border-right:none;border-bottom:1px solid rgba(0,0,0,.1)}
+  .ab-img-col{display:none}
+  #about{padding:5rem 5vw}
+}
+/* ── MOBILE (640px) ─────────────────────────────────── */
+@media(max-width:640px){
+  .hero-h1{font-size:2.6rem}
+  .hero-r{height:300px}
+  .hero-proof{flex-direction:column;gap:1rem}
+  .hero-proof>div{display:flex;align-items:center;gap:.75rem}
+  .hero-proof>div .pn{font-size:1.6rem;margin-bottom:0}
+  .vb-r{grid-template-columns:1fr 1fr}
+  .vb-img{height:110px}
+  .svc-grid,.testi-grid,.news-grid{grid-template-columns:1fr}
+  .eco-cards{grid-template-columns:1fr}
+  .ft-top{grid-template-columns:1fr}
+  .ft-bot{flex-direction:column;align-items:flex-start;gap:.75rem}
+  .ft-soc{flex-wrap:wrap;gap:1rem}
   .diff-cells{grid-template-columns:1fr}
-  .lead-tabs{flex-direction:column;border:none;gap:.5rem}
-  .lead-tab{max-width:100%;border-right:none;border-bottom:1px solid rgba(0,0,0,.1)}
+  .lead-tabs{flex-direction:column}
+  .lead-tab{width:100%;border-right:none}
+  .abar{font-size:.65rem;padding:.4rem 4vw}
+  .cases-grid{grid-template-columns:1fr}
+  section{padding:4rem 5vw}
+  .work-hdr{flex-direction:column;align-items:flex-start;gap:.75rem}
+  .svc-intro{gap:1rem}
+}
+/* ── SMALL MOBILE (380px) ───────────────────────────── */
+@media(max-width:380px){
+  .hero-h1{font-size:2.1rem}
+  .nav-logo{font-size:.95rem}
+  .nav-logo-sub{display:none}
+  .pn{font-size:1.4rem}
+  .vb-r{grid-template-columns:1fr}
+  .vb-img{height:160px}
+  section{padding:3.5rem 4vw}
 }
 </style>
 </head>
@@ -537,7 +588,7 @@ footer{background:var(--off-black);padding:4rem 6vw 2rem;border-top:.5px solid r
 <section id="why-us">
   <div class="diff-lay">
     <div class="diff-iw fu">
-      <img src="ayanna-hero.jpg" alt="Ayanna Henderson — marketing strategist and executive" class="diff-img">
+      <img src="ayanna-white-suit.jpg" alt="Ayanna Henderson — marketing strategist and executive" class="diff-img" onerror="this.src='ayanna-hero.jpg'">
       <div class="diff-ov"></div>
       <div class="diff-stat">
         <div class="dis-box"><p class="dis-n">15M→70M+</p><p class="dis-l">Steve Harvey following built</p></div>
@@ -691,7 +742,7 @@ footer{background:var(--off-black);padding:4rem 6vw 2rem;border-top:.5px solid r
 <!-- ABOUT -->
 <section id="about">
   <div class="ab-iw fu">
-    <img src="ayanna-hero.jpg" alt="Ayanna Henderson, MBA — Founder & CEO of Ayanna Henderson Marketing" class="ab-img" loading="lazy">
+    <img src="ayanna-bw.jpg" alt="Ayanna Henderson, MBA — Founder & CEO of Ayanna Henderson Marketing" class="ab-img" loading="lazy" onerror="this.src='ayanna-hero.jpg'">
   </div>
   <div>
     <p class="ey fu">Ayanna Henderson, MBA</p>

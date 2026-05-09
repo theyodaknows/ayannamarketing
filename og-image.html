@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1200">
+<title>OG Preview — Ayanna Henderson Marketing</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{width:1200px;height:630px;overflow:hidden;background:#0E0E0E;font-family:'DM Sans',system-ui,sans-serif;color:#fff;display:flex}
+.left{flex:1;padding:70px 60px;display:flex;flex-direction:column;justify-content:space-between;position:relative;z-index:2}
+.right{width:420px;position:relative;overflow:hidden;flex-shrink:0}
+.right img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 8%;opacity:.85}
+.right::after{content:'';position:absolute;inset:0;background:linear-gradient(to right,#0E0E0E 0%,transparent 60%)}
+.eyebrow{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#B8933F;margin-bottom:28px;display:flex;align-items:center;gap:10px}
+.eyebrow::before{content:'';display:block;width:28px;height:1px;background:#B8933F}
+h1{font-family:'Cormorant Garamond',Georgia,serif;font-size:72px;font-weight:500;line-height:1;letter-spacing:-.02em;margin-bottom:16px}
+h1 em{font-style:italic;color:#D4AF6A;display:block}
+.tagline{font-size:15px;font-weight:300;color:rgba(255,255,255,.55);line-height:1.7;max-width:480px;margin-bottom:40px}
+.stats{display:flex;gap:40px}
+.stat-n{font-family:'Cormorant Garamond',Georgia,serif;font-size:36px;font-weight:500;color:#fff;line-height:1;margin-bottom:4px}
+.stat-l{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#6B6B6B}
+.brand{font-family:'Cormorant Garamond',Georgia,serif;font-size:16px;font-weight:600;letter-spacing:.04em}
+.brand span{color:#B8933F}
+.brand-sub{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#6B6B6B;margin-top:4px}
+.gold-line{width:60px;height:1px;background:#B8933F;margin-bottom:32px}
+</style>
+</head>
+<body>
+  <div class="left">
+    <div>
+      <div class="eyebrow">Los Angeles · Nationwide</div>
+      <div class="gold-line"></div>
+      <h1>Strategy built.<br>Content driven.<em>Brand transformed.</em></h1>
+      <p class="tagline">Full-service marketing agency · Fractional CEO + CMO · AI-integrated video production. 15+ years. Entertainment, brands, and nonprofits.</p>
+    </div>
+    <div>
+      <div class="stats">
+        <div><p class="stat-n">30B+</p><p class="stat-l">Total impressions</p></div>
+        <div><p class="stat-n">10%</p><p class="stat-l">Avg. engagement rate</p></div>
+        <div><p class="stat-n">15+</p><p class="stat-l">Years experience</p></div>
+      </div>
+      <div style="margin-top:32px;padding-top:24px;border-top:.5px solid rgba(255,255,255,.08)">
+        <div class="brand">Ayanna Henderson <span>Marketing</span></div>
+        <div class="brand-sub">Strategy · Story · Scale · Intelligence</div>
+      </div>
+    </div>
+  </div>
+  <div class="right">
+    <img src="ayanna-bw.jpg" alt="Ayanna Henderson" onerror="this.src='ayanna-hero.jpg'">
+  </div>
+</body>
+</html>
