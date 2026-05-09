@@ -458,19 +458,11 @@ footer{background:var(--off-black);padding:4rem 6vw 2rem;border-top:.5px solid r
   </div>
   <!-- SECTION STRIP NAV — anchors match every section id -->
   <div class="snav" id="snav" role="navigation" aria-label="Page sections">
-    <button class="sn active" data-target="hero">Home</button>
-    <button class="sn" data-target="our-impact">Our Impact</button>
-    <button class="sn" data-target="why-us">Why Us</button>
-    <button class="sn" data-target="services-section">Services</button>
-    <button class="sn" data-target="case-studies">Case Studies</button>
-    <button class="sn" data-target="video-production">Video & Production</button>
-    <button class="sn" data-target="fractional-leadership">Fractional CEO + CMO</button>
-    <button class="sn" data-target="testimonials">Testimonials</button>
-    <button class="sn" data-target="podcast">Podcast</button>
-    <button class="sn" data-target="about">About</button>
-    <button class="sn" data-target="news">News</button>
-    <button class="sn" data-target="ecosystem">The Portfolio</button>
-    <button class="sn" data-target="contact-cta">Contact</button>
+    <button class="sn active" data-target="cases">Case Studies</button>
+    <button class="sn" data-target="portfolio">Portfolio</button>
+    <button class="sn" data-target="industries">Industries</button>
+    <button class="sn" data-target="cta">Work With Us</button>
+    <button class="sn" data-target="youtube">Watch</button>
   </div>
 </nav>
 
@@ -749,7 +741,15 @@ function scrollTo(id) {
 
 // ── SECTION NAV BUTTONS ──
 document.querySelectorAll('.sn[data-target]').forEach(btn => {
-  btn.addEventListener('click', () => scrollTo(btn.dataset.target));
+  btn.addEventListener('click', () => {
+    const id = btn.dataset.target;
+    if (id === 'page-top') { window.scrollTo({top:0,behavior:'smooth'}); return; }
+    const el = document.getElementById(id);
+    if (el) {
+      const navH = document.getElementById('main-nav').offsetHeight;
+      window.scrollTo({top: el.offsetTop - navH, behavior:'smooth'});
+    }
+  });
 });
 
 // ── MAIN NAV ANCHOR LINKS (data-scroll) ──
@@ -785,7 +785,7 @@ const fuObs = new IntersectionObserver(entries => {
 document.querySelectorAll('.fu').forEach(el => fuObs.observe(el));
 
 // ── ACTIVE SECTION NAV (highlight as you scroll) ──
-const sectionIds = ['hero','our-impact','why-us','services-section','case-studies','video-production','fractional-leadership','testimonials','podcast','about','news','ecosystem','contact-cta'];
+const sectionIds = ['cases','portfolio','industries','cta','youtube'];
 const snavBtns = document.querySelectorAll('.sn[data-target]');
 const sObs = new IntersectionObserver(entries => {
   entries.forEach(entry => {

@@ -374,6 +374,16 @@ footer{background:var(--off-black);padding:4rem 6vw 2rem;border-top:.5px solid r
   .lead-tabs{flex-direction:column;border:none;gap:.5rem}
   .lead-tab{max-width:100%;border-right:none;border-bottom:1px solid rgba(0,0,0,.1)}
 }
+/* PAGE HERO */
+.page-hero{padding:7rem 6vw 5rem;background:var(--off-black);border-bottom:.5px solid rgba(184,147,63,.15)}
+.page-hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:end;max-width:1200px}
+.eyebrow,.ey-outer{font-size:.68rem;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:1.2rem;display:flex;align-items:center;gap:.75rem}
+.eyebrow::before,.ey-outer::before{content:'';display:block;width:22px;height:1px;background:var(--gold)}
+.page-hero h1{font-family:var(--serif);font-size:clamp(2.8rem,5vw,4.5rem);font-weight:500;line-height:1.05;letter-spacing:-.02em}
+.page-hero h1 em{font-style:italic;color:var(--gold-light);display:block}
+.page-hero p,.hero-right p{font-size:.95rem;font-weight:300;line-height:1.85;color:rgba(255,255,255,.6);margin-bottom:1.5rem}
+.disclaimer{font-size:.82rem;font-weight:300;line-height:1.7;color:rgba(255,255,255,.4);padding:1.25rem 1.5rem;border-left:2px solid rgba(184,147,63,.35);background:rgba(184,147,63,.04)}
+.disclaimer strong{color:rgba(255,255,255,.65);font-weight:500}
 </style>
 </head>
 <body>
@@ -459,19 +469,15 @@ footer{background:var(--off-black);padding:4rem 6vw 2rem;border-top:.5px solid r
   </div>
   <!-- SECTION STRIP NAV — anchors match every section id -->
   <div class="snav" id="snav" role="navigation" aria-label="Page sections">
-    <button class="sn active" data-target="hero">Home</button>
-    <button class="sn" data-target="our-impact">Our Impact</button>
-    <button class="sn" data-target="why-us">Why Us</button>
-    <button class="sn" data-target="services-section">Services</button>
-    <button class="sn" data-target="case-studies">Case Studies</button>
-    <button class="sn" data-target="video-production">Video & Production</button>
-    <button class="sn" data-target="fractional-leadership">Fractional CEO + CMO</button>
-    <button class="sn" data-target="testimonials">Testimonials</button>
-    <button class="sn" data-target="podcast">Podcast</button>
-    <button class="sn" data-target="about">About</button>
-    <button class="sn" data-target="news">News</button>
-    <button class="sn" data-target="ecosystem">The Portfolio</button>
-    <button class="sn" data-target="contact-cta">Contact</button>
+    <button class="sn active" data-target="hero">Overview</button>
+    <button class="sn" data-target="services">Services</button>
+    <button class="sn" data-target="usecases">Use Cases</button>
+    <button class="sn" data-target="process">Process</button>
+    <button class="sn" data-target="packages">Packages</button>
+    <button class="sn" data-target="past-work">Past Work</button>
+    <button class="sn" data-target="addons">Add-Ons</button>
+    <button class="sn" data-target="cta">Book a Date</button>
+    <button class="sn" data-target="youtube">Watch</button>
   </div>
 </nav>
 
@@ -943,7 +949,15 @@ function scrollTo(id) {
 
 // ── SECTION NAV BUTTONS ──
 document.querySelectorAll('.sn[data-target]').forEach(btn => {
-  btn.addEventListener('click', () => scrollTo(btn.dataset.target));
+  btn.addEventListener('click', () => {
+    const id = btn.dataset.target;
+    if (id === 'page-top') { window.scrollTo({top:0,behavior:'smooth'}); return; }
+    const el = document.getElementById(id);
+    if (el) {
+      const navH = document.getElementById('main-nav').offsetHeight;
+      window.scrollTo({top: el.offsetTop - navH, behavior:'smooth'});
+    }
+  });
 });
 
 // ── MAIN NAV ANCHOR LINKS (data-scroll) ──
@@ -979,7 +993,7 @@ const fuObs = new IntersectionObserver(entries => {
 document.querySelectorAll('.fu').forEach(el => fuObs.observe(el));
 
 // ── ACTIVE SECTION NAV (highlight as you scroll) ──
-const sectionIds = ['hero','our-impact','why-us','services-section','case-studies','video-production','fractional-leadership','testimonials','podcast','about','news','ecosystem','contact-cta'];
+const sectionIds = ['hero','services','usecases','process','packages','past-work','addons','cta','youtube'];
 const snavBtns = document.querySelectorAll('.sn[data-target]');
 const sObs = new IntersectionObserver(entries => {
   entries.forEach(entry => {
